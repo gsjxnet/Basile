@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('fonts/LibreFranklin-Regular.woff2') format('woff2'),
+        url('fonts/LibreFranklin-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Light.woff2') format('woff2'),
+        url('fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Light.woff2') format('woff2'),
+        url('fonts/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro.woff2') format('woff2'),
+        url('MyriadPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Bold.woff2') format('woff2'),
+        url('MyriadPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Semibold.woff2') format('woff2'),
+        url('MyriadPro-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/*
+
+@extend .OpenSans_bold;
+@extend .OpenSans_light;
+@extend .OpenSans_Regular;
+@extend .OpenSans_light;
+@extend .Raleway_light;
+@extend .Libre_Franklin_Regular;
+@extend .MyriadPro_Regular;
+@extend .MyriadPro_bold;
+@extend .MyriadPro_Semibold;
+@extend .a_buttom;
+@extend .content_h3;
+@extend .content_p;
+
+*/
+.MyriadPro_Semibold{
+    font-family: 'Myriad Pro';
+    font-weight: 600;
+    font-style: normal;
+}
+.MyriadPro_Regular{
+    font-family: 'Myriad Pro';
+    font-weight: normal;
+    font-style: normal;
+}
+.MyriadPro_bold{
+    font-family: 'Myriad Pro';
+    font-weight: bold;
+    font-style: normal;
+}
+.Libre_Franklin_Regular{
+    font-family: 'Libre Franklin';
+    font-weight: normal;
+    font-style: normal;
+}
+.OpenSans_bold{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-style: normal;
+}
+.OpenSans_light{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: normal;
+}
+.OpenSans_Regular{
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+}
+.Raleway_light{
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+}
+.fontsize_18{
+    font-size: 18px;
+}
+.fontsize_24{
+    font-size: 24px;
+}
+.fontsize_14{
+    font-size: 14px;
+}
+.content_p{
+    @extend .OpenSans_light;
+    @extend .fontsize_18;
+}
+
+.content_h3{
+    @extend .fontsize_24;
+    @extend .OpenSans_bold;
+}
+.a_buttom{
+    display: inline-block;
+    width: 176px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #bfbfbf;
+    color: #fff;
+}

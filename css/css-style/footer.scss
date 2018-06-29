@@ -1,0 +1,63 @@
+.footer{
+	width: 100%;
+	background-color: #000000;
+	.middle_content{
+		display: -webkit-flex; 
+  		display: flex;
+  		justify-content: space-between;
+  		/*align-items: center;*/
+  		padding: 38px 0; 
+		.footer_l{
+			width: 50%;
+			h3{
+				font-size: 24px;
+				@extend .Raleway_light;
+				color: #fff;
+				text-transform: uppercase;
+			}
+			p{
+				padding-top: 15px;
+				a{
+					font-size: 18px;
+					@extend .MyriadPro_Regular;
+					line-height: 1.5;
+					color: #fff;
+				}
+			}
+			.tel_mailto{
+				width: 100%;
+				display: -webkit-flex; 
+		  		display: flex;
+		  		justify-content:flex-start;
+		  		align-items: center;
+		  		padding-top: 15px;
+				a{
+					color: #fff;
+					font-size: 18px;
+					@extend .MyriadPro_Regular;
+					margin-right: 5px;
+				}
+			}
+		}
+		.footer_r{
+			width: 50%;
+			display: -webkit-flex; 
+	  		display: flex;
+	  		/*flex-direction:row-reverse;*/
+	  		justify-content:flex-end;
+	  		/*align-items: center;*/
+	  		p{
+	  			text-align: right;
+	  			font-size: 16px;
+	  			color: #fff;
+	  			@extend .OpenSans_Regular;
+	  			b{
+	  				font-weight:initial;
+	  			}
+	  			span{
+	  				padding:0 8px;
+	  			}
+	  		}
+		}
+	}
+}
