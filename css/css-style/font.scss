@@ -1,60 +1,67 @@
 @font-face {
     font-family: 'Libre Franklin';
-    src: url('fonts/LibreFranklin-Regular.woff2') format('woff2'),
-        url('fonts/LibreFranklin-Regular.woff') format('woff');
+    src: url('css-style/fonts/LibreFranklin-Regular.woff2') format('woff2'),
+        url('css-style/fonts/LibreFranklin-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Light.woff2') format('woff2'),
-        url('fonts/OpenSans-Light.woff') format('woff');
+    src: url('css-style/fonts/OpenSans-Light.woff2') format('woff2'),
+        url('css-style/fonts/OpenSans-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
-        url('fonts/OpenSans-Bold.woff') format('woff');
+    src: url('css-style/fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('css-style/fonts/OpenSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
-        url('fonts/OpenSans-Regular.woff') format('woff');
+    src: url('css-style/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('css-style/fonts/OpenSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Raleway';
-    src: url('fonts/Raleway-Light.woff2') format('woff2'),
-        url('fonts/Raleway-Light.woff') format('woff');
+    src: url('css-style/fonts/Raleway-Light.woff2') format('woff2'),
+        url('css-style/fonts/Raleway-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Myriad Pro';
-    src: url('MyriadPro.woff2') format('woff2'),
-        url('MyriadPro.woff') format('woff');
+    src: url('css-style/fonts/MyriadPro.woff2') format('woff2'),
+        url('css-style/fonts/MyriadPro.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Myriad Pro';
-    src: url('MyriadPro-Bold.woff2') format('woff2'),
-        url('MyriadPro-Bold.woff') format('woff');
+    src: url('css-style/fonts/MyriadPro-Bold.woff2') format('woff2'),
+        url('css-style/fonts/MyriadPro-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Myriad Pro';
-    src: url('MyriadPro-Semibold.woff2') format('woff2'),
-        url('MyriadPro-Semibold.woff') format('woff');
+    src: url('css-style/fonts/MyriadPro-Semibold.woff2') format('woff2'),
+        url('css-style/fonts/MyriadPro-Semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
-
+/*@font-face {
+  font-family: 'iconfont';  
+  src: url('http://at.alicdn.com/t/font_727502_7cwjbl37bmy.eot');
+  src: url('http://at.alicdn.com/t/font_727502_7cwjbl37bmy.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_727502_7cwjbl37bmy.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_727502_7cwjbl37bmy.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_727502_7cwjbl37bmy.svg#iconfont') format('svg');
+}*/
 
 /*
 
@@ -114,9 +121,15 @@
 }
 .fontsize_18{
     font-size: 18px;
+    @media (max-width:640px) {
+        font-size: 14px;
+    }
 }
 .fontsize_24{
     font-size: 24px;
+    @media (max-width:640px) {
+        font-size: 18px;
+    }
 }
 .fontsize_14{
     font-size: 14px;
@@ -137,6 +150,16 @@
     line-height: 40px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 2px 5px #bfbfbf;
+    /*box-shadow: 0 2px 5px #bfbfbf;*/
+    box-shadow: 0 2px 5px #3f3f3f;
     color: #fff;
+    @media (max-width:640px) {
+        width: 153px;
+        height: 35px;
+        line-height: 35px;
+    }
+    &:hover{
+        /*transition: all .3s cubic-bezier(0,0,.58,1);*/
+        transition:all 0.3s ease-in-out;
+    }
 }
